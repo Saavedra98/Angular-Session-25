@@ -1,0 +1,34 @@
+<div class="formulario bg-blue-500 w-1/3 rounded-xl p-5 mx-auto mt-14">
+    
+    <h1 class="font-bold text-4xl text-center text-white uppercase font-mono ">Login</h1>
+
+    <form class="mt-6" [formGroup]="formLogin">
+
+        
+        <div class="text-center">
+            <div class="my-2">
+                <label for="email" class="text-white font-mono text-2xl">Correo: </label>
+            </div>
+            <div>
+                <input type="text" placeholder="Ingresar Email" class="rounded-lg px-4 py-2 w-3/4" formControlName="email">
+            </div>
+        </div>
+        
+        <div class="text-center mt-6">
+            <div class="my-2">
+                <label for="password" class="text-white font-mono text-2xl">Password: </label>
+            </div>
+            <div>
+                <input type="password" placeholder="Ingresar Email" class="rounded-lg px-4 py-2 w-3/4" formControlName="password">
+            </div>
+        </div>
+        
+        <div class="text-center mt-6">
+            <button class="bg-green-600 hover:bg-green-800 hover:text-white text-xl font-mono px-8 py-2 rounded-lg" (click)="onSubmit()" >Login</button>
+        </div>
+
+
+
+    </form>
+
+</div>
